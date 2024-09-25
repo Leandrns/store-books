@@ -10,7 +10,6 @@ const Icone = styled.li `
 const Icones = styled.ul `
     display: flex;
     align-items: center;
-    list-style: none;
 `
 
 const icones = [perfil, sacola]
@@ -19,7 +18,7 @@ function IconesHeader() {
     return (
         <Icones>
             {icones.map((icone) => (
-                <Icone><img src={icone}></img></Icone>
+                <Icone><img src={icone} alt='icon'></img></Icone>
             ))}
         </Icones>
     )
